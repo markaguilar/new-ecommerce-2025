@@ -1,4 +1,5 @@
 "use client";
+
 import { useState, useEffect } from "react";
 import "../css/euclid-circular-a-font.css";
 import "../css/style.css";
@@ -40,7 +41,6 @@ export default function RootLayout({
                   <PreviewSliderProvider>
                     <Header />
                     {children}
-
                     <QuickViewModal />
                     <CartSidebarModal />
                     <PreviewSliderModal />

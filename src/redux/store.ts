@@ -1,5 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit";
 
+import globalReducer from "@/redux/features/global/global-slice";
 import quickViewReducer from "./features/quickView-slice";
 import cartReducer from "./features/cart-slice";
 import wishlistReducer from "./features/wishlist-slice";
@@ -9,6 +10,7 @@ import { TypedUseSelectorHook, useSelector } from "react-redux";
 
 export const store = configureStore({
   reducer: {
+    globalReducer,
     quickViewReducer,
     cartReducer,
     wishlistReducer,

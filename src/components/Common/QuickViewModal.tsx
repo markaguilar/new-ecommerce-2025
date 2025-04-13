@@ -35,7 +35,7 @@ const QuickViewModal = () => {
       addItemToCart({
         ...product,
         quantity,
-      })
+      }),
     );
 
     closeModal();
@@ -138,7 +138,7 @@ const QuickViewModal = () => {
                     </button>
 
                     <Image
-                      src={product?.imgs?.previews?.[activePreview]}
+                      src="/images/products/product-2-bg-1.png"
                       alt="products-details"
                       width={400}
                       height={400}
